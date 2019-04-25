@@ -1,0 +1,7 @@
+{
+	"main": "nw_main.js",
+	"name": "ReEditor",
+	"version": "0.0.1",
+	"description": "Editor by CodeMirror",
+	"author": "ace"
+}
