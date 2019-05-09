@@ -467,8 +467,15 @@ Configurations.loadJS(Configurations.requirejsFile, function() {
 				});
 
 				view.getContainer().css('height', '100%');
+
+				/**
+				 *
+				 * @see {@link https://stackoverflow.com/questions/3296644/hiding-the-scrollbar-on-an-html-page|css - Hiding the scrollbar on an HTML page - Stack Overflow}
+				 *
+				 */
+				jQuery('body').css('overflow', 'hidden');
 				
-				view.appendRow('<div id="' + codeMirrorId + '" class="row" style="height: 100%; overflow: hidden;"></div>');
+				view.appendRow('<div id="' + codeMirrorId + '" class="row" style="height: 100%;"></div>');
 				
 				codeMirror = CodeMirror(document.getElementById(codeMirrorId), codeMirrorConfig);
 				// codeMirror = CodeMirror.fromTextArea(document.getElementById('codeMirror'), codeMirrorConfig);
