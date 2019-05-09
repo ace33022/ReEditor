@@ -468,7 +468,7 @@ Configurations.loadJS(Configurations.requirejsFile, function() {
 
 				view.getContainer().css('height', '100%');
 				
-				view.appendRow('<div id="' + codeMirrorId + '" class="row" style="height:100%;"></div>');
+				view.appendRow('<div id="' + codeMirrorId + '" class="row" style="height: 100%; overflow: hidden;"></div>');
 				
 				codeMirror = CodeMirror(document.getElementById(codeMirrorId), codeMirrorConfig);
 				// codeMirror = CodeMirror.fromTextArea(document.getElementById('codeMirror'), codeMirrorConfig);
